@@ -1,0 +1,48 @@
+---
+title: "add-lotr-to-your-code"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{add-lotr-to-your-code}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+**Mostly generated from ChatGPT***
+
+It's important to note that while adding quotes can be a fun and creative way to document your code, it should not detract from the information provided in the documentation and should be used sparingly so as not to disrupt the readability of the documentation.
+
+Here's a boring function
+
+```{r}
+fahrenheit_to_celsius <- function(temp_F) {
+  temp_C <- (temp_F - 32) * 5 / 9
+  return(temp_C)
+}
+
+fahrenheit_to_celsius(98)
+```
+
+Let's add  `quote_lotr()` to a user-defined function.
+
+```{r}
+library(grond)
+
+fun_fahrenheit_to_celsius <- function(temp_F) {
+  temp_C <- (temp_F - 32) * 5 / 9
+  message(quote_lotr("Gandalf"))
+  return(temp_C)
+}
+
+fun_fahrenheit_to_celsius(98)
+```
+
+In this example, I've added a quote from Gandalf the White at the end of the documentation, under the author section. This quote is relevant as it talks about decision making and time management, which are important in any data analysis project.
+
+You can also include quotes in the examples section, in the see also section, and in the references section. You can choose quotes that are relevant to the function you're documenting, and that will help to convey the purpose and main idea of the function.
